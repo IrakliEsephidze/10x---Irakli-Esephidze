@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Tables</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #e9e9e9;
+        }
+        tfoot td {
+            font-weight: bold;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Part 1: Basic Table -->
+    <table>
+        <caption>List of Participants</caption>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>28</td>
+                <td>johndoe@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>34</td>
+                <td>janesmith@mail.ru</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>40</td>
+                <td>michaelbrown@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>22</td>
+                <td>emilydavis@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Chris Wilson</td>
+                <td>30</td>
+                <td>chriswilson@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Part 2: Merging Cells -->
+    <table>
+        <caption>Weekly Activity Schedule</caption>
+        <thead>
+            <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+                <th scope="col">Saturday</th>
+                <th scope="col">Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Morning</th>
+                <td rowspan="3">Yoga Class</td>
+                <td colspan="3">Team Meeting</td>
+                <td>Work</td>
+                <td rowspan="3">Free Time</td>
+                <td rowspan="3">Family Time</td>
+            </tr>
+            <tr>
+                <th scope="row">Afternoon</th>
+                <td>Project Work</td>
+                <td colspan="2">Workshop</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <th scope="row">Evening</th>
+                <td>Dinner</td>
+                <td>Gym</td>
+                <td>Relax</td>
+                <td>Reading</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Part 3: Table Sectioning -->
+    <table>
+        <caption>Shopping Cart</caption>
+        <thead>
+            <tr>
+                <th id="item">Item Name</th>
+                <th id="quantity">Quantity</th>
+                <th id="price">Price per Item</th>
+                <th id="total">Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="item">Laptop</td>
+                <td headers="quantity">1</td>
+                <td headers="price">$1000</td>
+                <td headers="total">$1000</td>
+            </tr>
+            <tr>
+                <td headers="item">Headphones</td>
+                <td headers="quantity">2</td>
+                <td headers="price">$50</td>
+                <td headers="total">$100</td>
+            </tr>
+            <tr>
+                <td headers="item">Mouse</td>
+                <td headers="quantity">1</td>
+                <td headers="price">$25</td>
+                <td headers="total">$25</td>
+            </tr>
+            <tr>
+                <td headers="item">Keyboard</td>
+                <td headers="quantity">1</td>
+                <td headers="price">$45</td>
+                <td headers="total">$45</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>$1170</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Part 6: Bonus Calendar -->
+    <table>
+        <caption>December 2024 Calendar</caption>
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <!-- Add additional rows for the month -->
+        </tbody>
+    </table>
+</body>
+</html>
