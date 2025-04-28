@@ -8,4 +8,4 @@ function isValidNode(nodeId) {
   
   const valid1 = isValidNode('ND404');
   
-  console.log(`Node valid: ${valid1}`);
+  console.log(`Node valid: ` + valid1);
