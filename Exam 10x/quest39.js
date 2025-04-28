@@ -3,6 +3,6 @@ const dataB = { uptime: '99%', status: 'online' };
 
 const combinedData = Object.assign({}, dataA, dataB);
 
-const summaryText = `Sector ${combinedData.sector} load ${combinedData.load}%, uptime ${combinedData.uptime}, status ${combinedData.status}`;
+const summaryText ='sector: ' + combinedData.sector + ', load: ' + combinedData.load + ', uptime: ' + combinedData.uptime + ', status: ' + combinedData.status; 
 
-console.log(`Report: ${summaryText}`);
+console.log("Report: " + summaryText);
