@@ -13,4 +13,4 @@ const registry = [
   
   const names = updatedRegistry.map(node => node.name).join(', ');
   
-  console.log(`Ready backups: ${names}`);
+  console.log(`Ready backups: ` + names);
