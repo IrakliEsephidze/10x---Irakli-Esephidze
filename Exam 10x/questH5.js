@@ -1,4 +1,3 @@
-
 const nodes = ['node1', 'node2', 'node3'];
 
 function processNodes(list, callback) {
@@ -8,5 +7,5 @@ function processNodes(list, callback) {
 }
 
 processNodes(nodes, function(node) {
-  console.log(`Processed: ${node}`);
+  console.log(`Processed: ` + node);
 });
