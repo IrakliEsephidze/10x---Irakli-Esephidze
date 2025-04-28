@@ -4,7 +4,7 @@ function createLogger(threshold = 15) {
   function logValues() {
     for (let value of values) {
       if (value > threshold) {
-        console.log(`Warning: ${value}`);
+        console.log(`Warning: ` + value);
       }
     }
   }
